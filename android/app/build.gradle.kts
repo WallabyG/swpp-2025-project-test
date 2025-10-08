@@ -37,6 +37,13 @@ android {
     buildFeatures {
         compose = true
     }
+    lint {
+        xmlReport = true
+        htmlReport = false
+        disable.add("AndroidGradlePluginVersion")
+        disable.add("GradleDependency")
+        disable.add("NewerVersionAvailable")
+    }
 }
 
 dependencies {
